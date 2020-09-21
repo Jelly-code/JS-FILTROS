@@ -20,8 +20,7 @@ nombreGato.oninput = () => {
 const botonesColor = document.querySelectorAll(".botones-color")
 
 for (let boton of botonesColor) {
-    boton.onclick = (e) => {
-        e.preventDefault()
+    boton.onclick = () => {
         for (let card of cards) {
             if (boton.dataset.color === card.dataset.color) {
                 card.classList.remove('hidden')
