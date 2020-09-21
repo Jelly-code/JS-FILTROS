@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  
+        <div class="card" data-name="artilugia" data-sex="none" data-color="tricolor">
+          <img src="http://www.placekitten.com/600">
+          <div class="title">
+            <h4>Artilugia</h4>
+          </div>
+        </div>
+        
+        <div class="card" data-name="boris" data-sex="m" data-color="blanco">
+          <img src="http://www.placekitten.com/380">
+          <div class="title">
+            <h4>Boris</h4>
+          </div>
+        </div>
+        
+        <div class="card" data-name="pippin" data-sex="m" data-color="romano">
+          <img src="http://www.placekitten.com/400">
+          <div class="title">
+            <h4>Pippin</h4>
+          </div>
+        </div>
+
+        <div class="card" data-name="stella" data-sex="f" data-color="tricolor">
+            <img src="http://www.placekitten.com/1000">
+            <div class="title">
+              <h4>Stella</h4>
+            </div>
+          </div>        
+    </div>
+    <form id="formulario">
+        <label for="name">
+            <p>Nombre</p>
+            <input type="text" id="name" />
+        </label>
+        <label for="color">
+            <p>Colores</p>
+            <button data-color="tricolor" class="botones-color">Tricolor</button>
+        </label>
+        <label for="color">
+          <button data-color="blanco" class="botones-color">Blanco</button>
+          <button data-color="romano" class="botones-color">Romano</button>
+          <button data-color="todos" class="botones-color">Todos</button>
+      </label>
+        <label for="sex">
+            <p>Sexo</p>
+            <input type="radio" name="sex" data-sex="m" value="m" class="sexo">
+            Macho
+        </label>
+        <label for="sex">
+            <input type="radio" name="sex" data-sex="f" value="f" class="sexo">
+            Hembra
+        </label>
+        <label for="sex">
+            <input type="radio" name="sex" data-sex="none" value="none" class="sexo">
+            Indistinto
+        </label>
+    </form>
+
+    
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
